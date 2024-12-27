@@ -1,0 +1,603 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+   
+}
+body{
+    background: #0b0c2a;
+}
+img {
+	max-width: 100%;
+}
+
+.header{
+    display: flex;
+    background-color: #070720;
+    justify-content: space-between;
+    border: 0.5rem skyblue;
+    color: white;
+    padding: 2% 10%;
+    width: 100vw;
+  
+}
+.header-part1{
+    width: 20%;
+
+}
+.header-part1 > h1 {
+   font-size: 2rem;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-style: italic;
+   text-transform: capitalize;
+   padding: 2%;
+
+}
+.header-part2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.header-part2 > a {
+   text-transform: capitalize;
+   text-decoration: none;
+   color: white;
+   font-size: 1.5rem;
+}
+.header-part3{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;     
+}
+#search{
+    width: 70%;
+    height: 30px;
+}
+#menu{
+    display: none;
+}
+.h4{
+    display: none;
+}
+.top{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 5% ;
+   
+}
+.sidebar1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 5px;
+    padding: 0% 5%;
+    padding-top: 30%;
+} 
+.sidebar1 > p ,.fa{
+    color:rgb(255, 255, 255);
+    font-size: 1rem;
+    padding: 2% 0%;
+    
+}
+.label{
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5%;
+}
+.sidebar1 > h2  {
+    color: white;
+    font-size: 2rem;
+    
+}
+.sidebar1 > .button{
+    background-color: rgb(52, 232, 232);
+    border-radius: 30%;
+    border: none;
+    padding: 1.5%;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+.button > a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(249, 243, 243);
+    transition: 0.5s;
+}
+.button:hover {
+    background-color: red;
+    color: white;
+    padding: 1%;
+    padding-right: 3%;
+}
+.sidebar2{
+    width: 100%;
+    height: 80%;
+    background-image: url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpg);
+    background-repeat: no-repeat ;
+    background-size: 100% 100%;
+    border-radius: 1%;
+    padding-bottom: 3%;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    padding: 0% 5%;
+
+}
+.right-side{
+    width: 60%;
+}
+.row{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-left: 4px solid red ;
+}
+.trend > h4{
+    color:white;
+    font-size: 1.8rem;
+    text-transform: uppercase; 
+    
+}
+.trend{
+    padding:2% 1%;
+}
+.view{
+    color:white;
+    font-size: 1.9rem;
+    text-transform: capitalize; 
+    padding-right: 30px;
+
+}
+.row1, .row2,.row3{
+    display: flex;
+    padding: 1% 2%;
+    gap: 6%;
+}
+.cards {
+    width: 100%;
+}
+.card > img{
+    width:100%;
+    height: 355px;
+}
+.card1{
+    width: 100%;
+    position: relative;
+    top: -50px;
+}
+ .num{ 
+    width: 30%;
+    background-color: rgb(206, 35, 35); 
+    color: white;  
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10%;
+    padding: 1%;
+    position: relative;
+    top: -350px;
+    left: 10px;
+
+}
+.views{
+    background-color:rgb(68, 68, 68); 
+    color: white;  
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 30%;
+    border-radius: 10%;
+    padding: 1%;
+    position: relative;
+    right: -170px;
+    top: -85px;
+}
+.views > .fa-eye{
+    display: inline;
+}
+.comment{ 
+    width: 20%;
+    background-color: grey;
+    color: white;   
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10%;
+    padding: 1%;
+    position: relative;
+    top: -60px;
+    left: 10px;
+} 
+.card1 > span{
+    background-color: rgb(47, 42, 42);
+    color: white;
+    font-family: sans-serif;
+    border-radius: 30%;
+    padding: 2% 5%;
+    font-size: 0.5rem;
+}
+h1{
+   font-size: 1.5rem;
+   color: white;
+   text-transform: capitalize;
+   padding-top: 4%;
+   
+}
+.right-side{
+    width: 40%;
+    padding: 1% 0%;
+
+}
+.star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid red ;
+    padding: 2%;
+   
+   
+}
+.star > h4{
+    color:white;
+    font-size: 1.3rem;
+    text-transform: uppercase; 
+}
+.star > div >a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;  
+}
+.star > div {
+    display: flex;
+    gap:10px ;
+}
+.l_card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 3%;
+    padding-top: 5%;
+    padding-bottom: 20%;
+    
+}
+.c{
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    border-radius: 2%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.ep {
+    width: 20%;
+    height: 26px;
+    background-color: rgb(206, 35, 35); 
+    color: white;  
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10%;
+    padding: 1%;
+}
+.vw{
+    width: 20%;
+    height: 28px;
+    background-color:rgb(68, 68, 68); 
+    color: white;  
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10%;
+    padding: 1%;
+
+}
+.vw > .fa-eye {
+    display: inline;
+}
+.h1 {
+    padding-top: 40%;
+}
+.c1{
+    background-image: url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpg);
+}
+.c2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpq5SELk4_94BhhujxJ6F3Beap9le9SEW_8Q&s);
+}
+.c3{
+   background-image: url(https://m.media-amazon.com/images/S/pv-target-images/6b14c9724f7c9aa120cfb7a6658c5d50b735b2354d50e5f0c1463495c4a0731a.jpg);
+}
+.c4{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYmIzYzNhZDUtZTU3OC00NDA2LTgyOWYtZjA3N2EwMjdkZjRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+}
+.card2{
+    border-left: 4px solid red ;
+    padding: 2% ;
+}
+.card2 > h4{
+    color:white;
+    font-size: 1.3rem;
+    text-transform: uppercase; 
+}
+.l_card1{
+    display: flex;
+    flex-direction: column; 
+}
+.img{
+    display: flex;
+    gap: 3%;
+    padding-top: 5%;
+  
+}
+.d1{
+    width: 30%;
+}
+.anime1 > span{
+    background-color: rgb(47, 42, 42);
+    color: white;
+    font-family: sans-serif;
+    border-radius: 30%;
+    padding: 2% 5%;
+    font-size: 0.5rem;
+}
+.anime1 > h2{
+    color: white;
+    padding-top: 20%;
+    text-transform: capitalize;
+}
+.anime1 > p{
+    color: rgb(171, 162, 162);
+    padding-top: 40%;
+
+}
+/* .anime1 > p > .fa-eye{
+    display: inline;
+} */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    background-color:#070720;
+
+}
+.footer > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.footer > .f2{
+    color: #3d3d3d;
+}
+.footer a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color:#a5aeb7;
+    font-size: 1rem;
+
+}
+
+@media screen and (max-width:400px) {
+   
+    .header {
+        width: 100vw;
+        height: 60px;
+        display: flex;
+       
+    }
+    .row{
+        width: 100vw;
+        display: flex;
+    }
+    .header-part2,.input-checkbox,#search{
+        display: none;
+    }
+    .h4{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid black;
+        color: white;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+    }
+    .h4 > .ham{
+        padding: 2%;
+        background-color: #3d3d3d;
+    }
+    .header-part1,.header-part3 {
+        width: 40%;
+    }
+    .input-checkbox:checked ~ .header > .header-part2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        left: -120px; 
+        top: 125px;
+    }
+    .input-checkbox:checked ~ .h4{
+        padding-bottom: 100px;
+        background-color: #3d3d3d;
+    }
+    .header-part2> a,.fa-angle-down{
+        font-size: 1rem;
+    }
+    .num ,.views ,.comment{
+        width: 20%;
+    }
+    .sidebar1 > .label ,.button > a{ 
+       font-size: 0.5rem; 
+    }
+    .sidebar1 > h2{
+       font-size: 1rem;  
+    } 
+    .sidebar1 > p , .fa-chevron-right ,.fa-long-arrow-right{
+        font-size: 0.5rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .trend > h4{
+        font-size: 10px;
+    }
+    .card > img {
+        width: 95%;
+        height: 355px;
+    }
+    .view > h5{
+        font-size: 10px;
+    }
+    .views{
+        position: relative;
+        right: -285px;
+        top: -88px;
+    }
+    .row1,.row2,.row3, .right-side,.footer{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+   .footer{
+    gap: 5%;
+   }  
+}
+@media screen and (min-width:401px) and (max-width:768px){
+    .header{
+        height: 60px;
+
+    }
+    .header-part2,#search{
+        display: none;
+    }
+    .header-part2,.input-checkbox,#search{
+        display: none;
+    }
+    .h4{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid black;
+        color: white;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+    }
+    .h4 > .ham{
+        padding: 2%;
+        background-color: #3d3d3d;
+    }
+    .header-part3 {
+        width: 10%;
+    }
+    .input-checkbox:checked ~ .header > .header-part2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        left: -275px; 
+        top: 125px;
+    }
+    .input-checkbox:checked ~ .h4{
+        padding-bottom: 100px;
+        background-color: #3d3d3d;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .row,.row1,.row2,.row3{
+        width: 100%;
+    }
+    .row1 > .hide,.row2 > .hide,.row3 > .hide {
+        display: none;
+    }
+    .views {
+        position: relative;
+        right: -210px;
+    }
+    .num{
+        width: 20%;
+    }
+    .right-side{
+        width: 100vw;
+    }
+    .h1 {
+        padding-top: 20%;
+    }
+    .d1 {
+        width: 20%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+  
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+
+    .header{
+        gap: 10px;
+    }
+    .header > .header-part3{
+        padding-left: 10px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }   
+    .right-side{
+        width: 100%;
+    } 
+    .c{
+        width: 100%;
+        height: 440px;
+    }  
+    .l_card{
+        padding: 5% 0%;
+    }
+    .anime1{
+        width: 50%;
+        padding-top: 5%;
+    }
+    .img > .d1{
+        width: 40%;
+    }
+    .anime1 > p span {
+        font-size: 1.5rem;
+    }
+    .anime1 >  span {
+        font-size: 1.5rem;
+    }
+    .anime1 > h2{
+        font-size: 2rem;
+    }
+
+}
+
+
